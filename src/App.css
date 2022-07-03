@@ -36,3 +36,210 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: none;
+}
+
+#root .App {
+}
+
+.App h1 {
+  font-size: 50px;
+  color: brown;
+}
+
+.App .search-notes {
+  width: 100%;
+  margin: 15px auto;
+}
+
+.search-notes .search-result {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+.search-notes form input {
+  width: 75%;
+  font-size: 26px;
+  color: rgb(91, 58, 58);
+  font-weight: 600;
+  background-color: whitesmoke;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.App .add-note {
+  margin: 10px auto;
+}
+
+.add-note .addNote {
+  color: black;
+  padding: 10px 30px;
+  background-color: lightseagreen;
+  border-radius: 20px;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: all 0.5s ease;
+} 
+
+.addNote span {
+  font-size: 50px;
+  text-align: center;
+}
+
+.addNote:hover {
+  background-color: lightgreen;
+}
+
+.add-note .add-note-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: bisque;
+  display: none;
+  width: 60%;
+}
+
+.add-note-form span {
+  font-size: 50px;
+  color: black;
+  font-weight: 600;
+  position: relative;
+  left: 45%;
+  cursor: pointer;
+}
+
+.add-note-form span:hover {
+  color: crimson;
+}
+
+.add-note-form label {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.add-note-form input {
+  font-size: 24px;
+  color:rgb(91, 58, 58);
+  width: 90%;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 5px auto;
+}
+
+.add-note-form textarea {
+  font-size: 20px;
+  color: black;
+  width: 90%;
+  padding: 5px;
+  height: 8em;
+  resize: none;
+}
+
+.add-note-form button {
+  font-size: 24px;
+  padding: 10px;
+  color: white;
+  background-color: green;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.App .notes-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px auto;
+  width: 90%;
+  padding: 15px;
+  gap: 10px;
+}
+
+.notes-list #remove-all {
+  font-size: 24px;
+  color: white;
+  background-color: rgb(241, 86, 117);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.App .single-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  padding: 10px;
+  width: 80%;
+  border-radius: 15px;
+}
+
+.single-note h3 {
+  font-size: 30px;
+  text-decoration: underline;
+  color: rgb(91, 58, 58);
+  margin: 0;
+
+}
+
+.single-note p {
+  font-size: 18px;
+}
+
+.single-note #text {
+  width: 90%;
+  height: 80px;
+  overflow:auto;
+  border-top: 1px solid black;
+  border-bottom:  1px solid black;
+  padding:25px;
+}
+
+.single-note .single-note-date {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.single-note-date span {
+  font-size: 50px;
+  padding: 7px;
+  margin: 3px;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: all 0.6s ease;
+}
+
+.single-note-date span:hover {
+  transform: scale(0.95);
+}
+
+.single-note-date #edit {
+  background-color: dodgerblue;
+}
+
+.single-note-date #delete {
+  background-color: crimson;
+}
+
+
